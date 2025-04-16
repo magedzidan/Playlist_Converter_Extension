@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
           fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=1&explaintext=1&titles=${encodeURIComponent(title)}&origin=*`)
             .then(response => response.json())
             .then(data => {
-              const summary = data.extract();
+              const pages = data.query.pages;
+              const pageId = Object.keys(pages)[0];
+              const summary = pages[pageId].extract;
 
               if (summary) {
                 // Store the summary locally
