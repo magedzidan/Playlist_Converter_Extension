@@ -12,11 +12,11 @@
   },
   "action": {
     "default_popup": "hello.html",
-    "default_icon": "assests/logo.jpg"
+    "default_icon": "assests/Wikipedia's_W.svg.png"
   },
   "icons":{
-      "16":"assests/logo.jpg",
-      "48":"assests/logo.jpg",
-      "128":"assests/logo.jpg"
+      "16":"assests/Wikipedia's_W.svg.png",
+      "48":"assests/Wikipedia's_W.svg.png",
+      "128":"assests/Wikipedia's_W.svg.png"
   }
 }
