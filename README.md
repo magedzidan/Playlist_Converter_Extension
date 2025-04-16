@@ -31,8 +31,3 @@ A simple Chrome extension that lets you quickly get summaries of Wikipedia artic
 - `manifest.json` - Extension configuration
 - `background.js` - Simple background script
 
-## License
-
-MIT License
-
----
