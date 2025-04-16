@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
           if (result[title]) {
             // Use cached summary
             resolve(result[title]);
+            chrome.storage.local.set({ 'lastTitle': title });
+
             return;
           }
 
@@ -65,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const summary = await getWikipediaSummary(title);
 
       // Limit summary length
-      if (summary.length > 500) {
-        summaryElement.textContent = summary.substring(0, 500) + '...';
+      if (summary.length > 800) {
+        summaryElement.textContent = summary.substring(0, 800) + '...';
       } else {
         summaryElement.textContent = summary;
       }
