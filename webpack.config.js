@@ -1,0 +1,16 @@
+module.exports={
+    mode:"development",
+    entry:"./src/test.tsx",
+    module:{
+        rules:[
+            {
+                use:"ts-loader",
+                test:/\.tsx$/,
+                exclude:/node_modules/
+            }
+        ]
+    },
+    ouput:{
+        filename:"index.js"
+    }
+}
