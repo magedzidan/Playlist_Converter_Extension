@@ -5,7 +5,8 @@
   "description": "A Chrome extension to summarize Wikipedia pages.",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
   "background":{
     "service_worker":"background.js"
